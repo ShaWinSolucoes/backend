@@ -1,0 +1,12 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "apiSafra Documentation",
+    "description": "This is a REST API created with the aim of creating Safra bank user accounts more easily using Open Banking.",
+    "version": "1.0.0",
+    "contact": {
+      "email": "andreg.diniz97@hotmail.com"
+    }
+
+  }
+}
