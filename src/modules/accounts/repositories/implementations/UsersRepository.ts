@@ -21,7 +21,6 @@ class UsersRepository implements IUsersRepository {
     sex,
     socialName,
     updateDateTime,
-    password,
   }: ICreateUserDTO): Promise<void> {
     const user = this.repository.create({
       updateDateTime,
@@ -33,7 +32,6 @@ class UsersRepository implements IUsersRepository {
       maritalStatusCode,
       maritalStatusAdditionalInfo,
       sex,
-      password,
     });
 
     await this.repository.save(user);

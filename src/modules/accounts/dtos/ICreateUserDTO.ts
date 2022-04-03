@@ -8,8 +8,6 @@ interface ICreateUserDTO {
   maritalStatusCode: string;
   maritalStatusAdditionalInfo: string;
   sex: string;
-  companyCnpj: Array<string>;
-  password: string;
 }
 
 export { ICreateUserDTO };

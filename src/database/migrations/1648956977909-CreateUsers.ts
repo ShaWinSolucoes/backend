@@ -48,11 +48,6 @@ export class CreateUsers1648956977909 implements MigrationInterface {
             type: 'varchar',
           },
           {
-            name: 'companyCnpj',
-            type: 'varchar',
-            isArray: true,
-          },
-          {
             name: 'created_at',
             type: 'timestamp',
             default: 'now()',

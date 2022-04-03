@@ -33,12 +33,6 @@ class User {
   @Column()
   sex: string;
 
-  @Column()
-  companyCnpj: [];
-
-  @Column()
-  password: string;
-
   @CreateDateColumn()
   created_at: Date;
 

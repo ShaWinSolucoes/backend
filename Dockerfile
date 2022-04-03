@@ -10,4 +10,4 @@ COPY . .
 
 EXPOSE 3333
 
-CMD ["npm", "run", "dev", "typeorm"]
+CMD ["npm", "run", "dev"]

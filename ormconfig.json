@@ -6,7 +6,7 @@
   "password": "safra",
   "database": "apiSafra", 
   "migrations": ["./src/database/migrations/*.ts"],
-  "entities": ["./src/modules/**/entities/*.ts"],
+  "entities": ["./src/modules/accounts/entities/*.ts"],
   "cli": {
     "migrationsDir": "./src/database/migrations"
   }
