@@ -1,11 +1,45 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "apiSafra Documentation",
+    "title": "Safra Pocket Documentation",
     "description": "This is a REST API created with the aim of creating Safra bank user accounts more easily using Open Banking.",
     "version": "1.0.0",
     "contact": {
       "email": "andreg.diniz97@hotmail.com"
+    }
+  },
+  "paths": {
+    "/categories": {
+      "post": {
+        "tags": ["Users"],
+        "summary": "Create a User",
+        "description": "Create a new user with OpenBanking API",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "cpf": {
+                    "type": "string"
+                  }
+                },
+                "example":{
+                  "cpf": "376.056.478-98"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Authorization to use data not consent."
+          }
+        }
+      }
     }
   }
 }
